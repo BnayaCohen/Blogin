@@ -12,6 +12,7 @@
 @import 'components/card.css';
 @import 'components/footer.css';
 @import 'components/screen.css';
+@import 'components/modal.css';
 
 /* Media Queries */
 @import 'mq/mq.css';
