@@ -1,0 +1,30 @@
+footer {
+    height: 315px;
+    box-shadow: inset 0 1px 0 #e1e0e0;
+    background-color: #f8f8f8;
+}
+
+footer .social-media-btn {
+    width: 40px;
+    height: 40px;
+    background-color: #e5e5e5;
+    margin: 10px;
+}
+
+footer .social-media-btn:hover {
+    background-color: #516fad;
+    cursor: pointer;
+}
+
+footer .copyrights {
+    color: #a6a6a6;
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+}
+
+footer .copyrights .copyrights-link {
+    color: #939292;
+    font-weight: 700;
+    letter-spacing: 0.024375em;
+}

@@ -1,0 +1,38 @@
+/* flexBox */
+.flex {
+    display: flex;
+}
+
+.flex.space-between {
+    justify-content: space-between;
+}
+
+.flex.align-center {
+    align-items: center;
+}
+
+.flex.content-center {
+    justify-content: center;
+}
+
+.flex.flex-column {
+    flex-direction: column;
+}
+
+.clean-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* logo properties */
+.main-logo {
+    font-family: Eurofurenceregular;
+    margin-left: 3px;
+    font-size: 2.5rem;
+    letter-spacing: -0.05rem;
+}
+
+.main-logo .main-logo-dot {
+    color: #58c93a;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogin.</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="main-screen" onclick="toggleMenu()"></div>
+
+    <header class="header-background">
+        <div class="main-header main-layout flex align-center space-between">
+            <div class="main-logo">Blogin<span class="main-logo-dot">.</span></div>
+            <ul class="main-nav flex clean-list">
+                <li><a href="#">Journal</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button onclick="toggleMenu()" class="menu-toggle">☰</button>
+        </div>
+    </header>
+
+    <main class="main-layout">
+        <div class="card flex">
+            <div class="card-image">
+                <img src="img/img1.jpg" alt="">
+            </div>
+            <div class="card-content flex flex-column space-between">
+                <div>
+                    <h2 class="card-title">Duis aute irure dolor in
+                        henderit in voluptate.</h2>
+                </div>
+                <div>
+                    <p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                        doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...
+                    </p>
+                </div>
+                <div> <button class="card-btn">Continue Reading <span class="btn-arrow"> →</span></button></div>
+            </div>
+        </div>
+
+        <div class="card flex">
+            <div class="card-image">
+                <img src="img/img2.png" alt="">
+            </div>
+            <div class="card-content flex flex-column space-between">
+                <div>
+                    <h2 class="card-title">Duis aute irure dolor in
+                        henderit in voluptate.</h2>
+                </div>
+                <div>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                        doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...
+                    </p>
+                </div>
+                <div> <button class="card-btn">Continue Reading <span class="btn-arrow"> →</span></button></div>
+            </div>
+        </div>
+
+        <div class="card flex">
+            <div class="card-image">
+                <img src="img/img3.png" alt="">
+            </div>
+            <div class="card-content flex flex-column space-between">
+                <div>
+                    <h2 class="card-title">Duis aute irure dolor in
+                        henderit in voluptate.</h2>
+                </div>
+                <div>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                        doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...
+                    </p>
+                </div>
+                <div> <button class="card-btn">Continue Reading <span class="btn-arrow"> →</span></button></div>
+            </div>
+        </div>
+
+        <section class="paging-btns flex space-between">
+            <div class="paging-btn">← Previous</div>
+            <div class="paging-btn">Next →</div>
+        </section>
+
+    </main>
+
+    <footer class="flex flex-column align-center content-center">
+        <div class="main-logo">Blogin<span class="main-logo-dot">.</span></div>
+        <h5 class="copyrights">© 2014 Blogin.com - All Rights Reserved - Find more free Templates at <span
+                class="copyrights-link">Pixelhint.com</span></h5>
+        <div class="flex">
+            <div class="social-media-btn flex align-center content-center"><img src="img/FB.png" alt=""></div>
+            <div class="social-media-btn flex align-center content-center"><img src="img/twitter.png" alt=""></div>
+            <div class="social-media-btn flex align-center content-center"><img src="img/BE.png" alt=""></div>
+            <div class="social-media-btn flex align-center content-center"><img src="img/basketball.png" alt=""></div>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            document.body.classList.toggle('menu-open');
+            const menuToggleSign = document.querySelector('.menu-toggle').innerText
+            document.querySelector('.menu-toggle').innerText = menuToggleSign === '☰' ? 'X' : '☰'
+        }
+    </script>
+</body>
+
+</html>
