@@ -14,7 +14,7 @@
     }
 
     .main-header .main-nav {
-        position: fixed;
+        position: fixed; 
         right: 25%;
         top: -75%;
         flex-direction: column;
