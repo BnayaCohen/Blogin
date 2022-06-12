@@ -25,7 +25,7 @@
     list-style-type: none;
 }
 
-/* logo properties */
+/* MAIN LOGO */
 .main-logo {
     font-family: Eurofurenceregular;
     margin-left: 3px;
@@ -33,6 +33,29 @@
     letter-spacing: -0.05rem;
 }
 
-.main-logo .main-logo-dot {
-    color: #58c93a;
+.main-logo::after{
+    content: '.';
+    color: var(--clr1);
+}
+
+ /* FONT AWESOME */
+
+ .fa {
+    font-family: fa;
+}
+
+.fa.fa-facebook-f::before {
+    content: "\f39e";
+}
+
+.fa.fa-twitter::before {
+    content: "\f099";
+}
+
+.fa.fa-behance::before {
+    content: "\f1b4";
+}
+
+.fa.fa-basketball::before {
+    content: "\f434";
 }

@@ -13,16 +13,26 @@
     <div class="main-screen" onclick="closePopUps()"></div>
 
     <header class="header-background">
-        <div class="main-header main-layout flex align-center space-between">
-            <div class="main-logo">Blogin<span class="main-logo-dot">.</span></div>
+        <nav class="main-header main-layout flex align-center space-between">
+            <div class="main-logo">Blogin</div>
             <ul class="main-nav flex clean-list">
-                <li><a href="#">Journal</a></li>
+                <li class="dropdown-activate">
+                    <a href="#">Journal</a>
+                    <div class="navbar-dropdown">
+                        <ul class="clean-list">
+                            <li><a href="#">October 2016</a></li>
+                            <li><a href="#">January 2017</a></li>
+                            <li><a href="#">April 2017</a></li>
+                            <li><a href="#">July 2017</a></li>
+                        </ul>
+                    </div>
+                </li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Work</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
             <button onclick="toggleMenu()" class="menu-toggle">☰</button>
-        </div>
+        </nav>
     </header>
 
     <main class="main-layout">
@@ -38,12 +48,13 @@
                 <div>
                     <p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
                         doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    </p>
+                    <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                         pariatur...
                     </p>
                 </div>
-                <div> <button class="card-btn" onclick="toggleModal()">Continue Reading <span class="btn-arrow"> →</span></button></div>
+                <div> <button class="card-btn" onclick="toggleModal()">Continue Reading <span class="btn-arrow">
+                            →</span></button></div>
             </div>
         </div>
 
@@ -59,12 +70,13 @@
                 <div>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
                         doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    </p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                         pariatur...
                     </p>
                 </div>
-                <div> <button class="card-btn"  onclick="toggleModal()">Continue Reading <span class="btn-arrow"> →</span></button></div>
+                <div> <button class="card-btn" onclick="toggleModal()">Continue Reading <span class="btn-arrow">
+                            →</span></button></div>
             </div>
         </div>
 
@@ -80,12 +92,13 @@
                 <div>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
                         doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    </p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                         pariatur...
                     </p>
                 </div>
-                <div> <button class="card-btn"  onclick="toggleModal()">Continue Reading <span class="btn-arrow"> →</span></button></div>
+                <div> <button class="card-btn" onclick="toggleModal()">Continue Reading <span class="btn-arrow">
+                            →</span></button></div>
             </div>
         </div>
 
@@ -108,14 +121,14 @@
     </div>
 
     <footer class="flex flex-column align-center content-center">
-        <div class="main-logo">Blogin<span class="main-logo-dot">.</span></div>
+        <div class="main-logo">Blogin</div>
         <h5 class="copyrights">© 2014 Blogin.com - All Rights Reserved - Find more free Templates at <span
                 class="copyrights-link">Pixelhint.com</span></h5>
         <div class="flex">
-            <div class="social-media-btn flex align-center content-center"><img src="img/FB.png" alt=""></div>
-            <div class="social-media-btn flex align-center content-center"><img src="img/twitter.png" alt=""></div>
-            <div class="social-media-btn flex align-center content-center"><img src="img/BE.png" alt=""></div>
-            <div class="social-media-btn flex align-center content-center"><img src="img/basketball.png" alt=""></div>
+            <div class="social-links flex align-center content-center fa fa-facebook-f"></div>
+            <div class="social-links flex align-center content-center fa fa-twitter"></div>
+            <div class="social-links flex align-center content-center fa fa-behance"></div>
+            <div class="social-links flex align-center content-center fa fa-basketball"></div>
         </div>
     </footer>
     <script>
@@ -125,10 +138,10 @@
             document.querySelector('.menu-toggle').innerText = menuToggleSign === '☰' ? 'X' : '☰'
         }
 
-        function closePopUps(){
+        function closePopUps() {
             document.body.classList.remove('menu-open');
             document.body.classList.remove('modal-open');
-            document.querySelector('.menu-toggle').innerText ='☰'
+            document.querySelector('.menu-toggle').innerText = '☰'
         }
 
         function toggleModal() {

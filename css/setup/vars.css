@@ -1,8 +1,8 @@
 /* vars */
 :root {
-    --bg-clr-header: #292929;
-    --txt-clr-header: #ffffff;
-    --clr: #58c93a;
+    --clr1: #58c93a;
+    --clr2: #292929;
+    --clr3: #1d1d1d;
 
-    --btn-arrow-opacity:0;
+    --btn-arrow-opacity: 0;
 }

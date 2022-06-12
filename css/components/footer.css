@@ -4,16 +4,12 @@ footer {
     background-color: #f8f8f8;
 }
 
-footer .social-media-btn {
+footer .social-links {
     width: 40px;
     height: 40px;
     background-color: #e5e5e5;
+    color: #ffffff;
     margin: 10px;
-}
-
-footer .social-media-btn:hover {
-    background-color: #516fad;
-    cursor: pointer;
 }
 
 footer .copyrights {
@@ -27,4 +23,21 @@ footer .copyrights .copyrights-link {
     color: #939292;
     font-weight: 700;
     letter-spacing: 0.024375em;
+}
+
+/* social links colors */
+.social-links.fa-facebook-f:hover {
+    background-color: #516FAD;
+}
+
+.social-links.fa-twitter:hover {
+    background-color: #2B99E7;
+}
+
+.social-links.fa-behance:hover {
+    background-color: #0053F2;
+}
+
+.social-links.fa-basketball:hover {
+    background-color: #E46705;
 }
