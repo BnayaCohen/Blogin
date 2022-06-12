@@ -5,10 +5,10 @@
 
 .card .card-title {
     margin-top: 0;
+    margin-bottom: auto;
     text-transform: uppercase;
     color: #4f4e4e;
     font-size: 1.75em;
-    
 }
 
 .card .card-image {
@@ -18,7 +18,7 @@
 
 .card img  {
     width: 100%;
-    /* object-fit: contain; */
+    height: 100%;
 }
 
 .card .card-content {
@@ -32,9 +32,9 @@
     line-height: 1.25rem;
 }
 
-.card .card-content p:last-of-type {
-    flex: 1;
-}
+/* .card .card-content p:last-of-type {
+    flex: 2;
+} */
 
 .card-btn {
     padding-left:1.5rem;
